@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: MonumentExtended-Regular;
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html{
+    scrollbar-width: none; 
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1.7s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+.hidden2{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(30%);
+    transition: all 2s;
+}
+
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden3{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-30%);
+    transition: all 2s;
+}
+
+.show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.nav-bar {
+    font-size: large;
+    font-weight: 500;
+    font-family: Nunito;
+    font-size: large;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    background-color: white;
+    z-index: 2;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.nav-bar .nav-right {
+    position: relative;
+    top: 5%;
+    display: flex;
+    list-style: none;
+    padding-right: 35px;
+    gap: 15px;
+}
+
+.nav-bar .nav-right li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 10vw;
+    cursor: pointer;
+}
+
+.nav-bar .nav-right li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(210, 22, 22);
+    text-decoration-thickness: 3px;
+}
+
+.nav-bar .nav-left li {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 10vw;
+}
+
+.nav-bar .nav-left img {
+    padding-left: 100px;
+    width: 35vw;
+    height: 15vh;
+}
+
+.page1 {
+    background-image: url('https://www.mayerbrown.com//-/jssmedia/images/information/next-organization/next-organization-hero-banner-animation_right.gif?h=1792&iar=0&w=3000&rev=77c197c5a183487cb658c95a7196a05d&hash=F11BA4EA146BA7FF9FB6996E53D9C852');
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.page1-text {
+    padding-top: 60px;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 50px;
+    color: white;
+
+}
+
+.page1-text2 {
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 30px;
+    color: white;
+}
+
+.page1-btn {
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 5%;
+    font-size: medium;
+    font-weight: 700;
+    font-family: Nunito;
+    width: 100px;
+    height: 40px;
+    outline: 3px solid rgba(0, 0, 0, 0);
+    outline-offset: 1px;
+    transition: all ease 0.7s;
+}
+
+.page1-btn:hover {
+    transition: all ease 0.7s;
+    outline: 3px solid rgb(254, 0, 0);
+    outline-offset: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page2{
+    scrollbar-width: none; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+.page2-heading{
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: red;
+    text-shadow: 0px 0px 29px rgba(255,0,0,0.6);
+    font-family: "MonumentExtended-Regular";
+}
+
+.page2-content{
+    font-family: "MonumentExtended-Regular";
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 0px 0px 29px rgba(255, 255, 255, 0.797);
+    padding-top: 10px;
+    line-height: 35px;
+}
+.page2-content b{
+    color: red;
+    text-shadow: 0px 0px 29px rgba(255,0,0,0.6);
+}
+.page-break{
+   -webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: red;
+    text-shadow: 0px 0px 29px rgba(255,0,0,0.6);
+    padding-top: 55vh;
+    font-family: "MonumentExtended-Regular";
+    text-align: center;
+    font-size: 50px;
+}
+
+.page2-heading2{
+    margin-top: 30vh;
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: red;
+    text-shadow: 0px 0px 29px rgba(255,0,0,0.6);
+    font-family: "MonumentExtended-Regular";
+}
+
+.page3{
+    margin-top: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page3-heading{
+    letter-spacing: 5px;
+    font-size: 35px;
+    color: red;
+    text-shadow: 0px 0px 29px rgba(255,0,0,0.6);
+    font-family: "MonumentExtended-Regular";
+}
+.page3-content{
+    padding-left: -20px;
+    display: flex;
+    padding-top: 40px;
+    align-content: center;
+    gap: 60px;
+}
+
+footer{
+    background-image: url('https://i.gifer.com/3eCC.gif');
+    background-position: top;
+    width: 100vw;
+    height: 65vh;
+    position: relative;
+    top: 70%;
+    background-color: white;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-heading{
+    color: black;
+    padding-top: 50px;
+    font-family: "MonumentExtended-Regular";
+    margin-top: 30px;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.footer-content{
+    display: flex;
+    font-family: "MonumentExtended-Regular";
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    padding-left: 40px;
+}
+.content{
+    display: flex;
+    padding-top: 50px;
+}
